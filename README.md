@@ -1,1 +1,3 @@
-# generator-read-server
+# server
+
+a [Sails](http://sailsjs.org) application
