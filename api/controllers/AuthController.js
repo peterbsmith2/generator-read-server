@@ -9,7 +9,8 @@ const githubOAuth = require('github-oauth')({
   githubSecret: process.env.SECRET,
   baseURL: 'http://localhost:' + '4200',
   loginURI: '/auth/login',
-  callbackURI: '/auth/callback'
+  callbackURI: '/auth/callback',
+  scope: 'user repo'
 })
 
 githubOAuth.on('error', function(err) {
